@@ -1,0 +1,25 @@
+body{
+    font-size: 18px;
+    font-family: Montserrat, Arial;
+}
+
+h1,
+h2 {
+    /* common styles here for h1 and h2 */
+    font-family: Montserrat, Arial; /* it will use 2nd font if first is not available on device*/
+}
+
+h1 {
+    color: darkgreen;
+    font-size: 40px;
+}
+
+h2 {
+    color: forestgreen;
+    font-size: 25px;
+}
+
+p {
+    
+    text-align: justify;
+}
