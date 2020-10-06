@@ -1,4 +1,17 @@
-body{
+* {
+    /* with asterisk selector '*' all elements are affected */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
     font-size: 18px;
     font-family: Montserrat, Arial;
 }
@@ -10,16 +23,46 @@ h2 {
 }
 
 h1 {
-    color: darkgreen;
+    color: #006b00;
     font-size: 40px;
+    margin-bottom: 20px;
 }
 
 h2 {
     color: forestgreen;
     font-size: 25px;
+    margin-bottom: 10px;
 }
 
-p {
-    
+/* to select 'class' we use '.' symbol */
+.main-text {
     text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* to select 'id' we use '#' symbol, using id is a bad practice, because they ca only be used once, so better use class */
+#author-text {
+    font-size: 22px;
+}
+
+.container {
+    width: 1140px;
+    /* we need to set margins to auto to see the container width properly */
+    margin: 20px auto 0px auto; /* top right bottom left */
+}
+
+.blog-post {
+    width: 75%;
+    float: left;
+    padding-right: 30px;
+}
+
+.other-posts {
+    width: 25%;
+    float: right;
+}
+
+.author-box {
+    padding-top: 20px;
+    border-top: 1px solid #868686;
 }
