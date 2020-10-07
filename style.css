@@ -43,6 +43,9 @@ h2 {
 /* to select 'id' we use '#' symbol, using id is a bad practice, because they ca only be used once, so better use class */
 #author-text {
     font-size: 22px;
+    float: left;
+    margin-top: 30px;
+    margin-left: 10px;
 }
 
 .container {
@@ -55,6 +58,7 @@ h2 {
     width: 75%;
     float: left;
     padding-right: 30px;
+    position: relative;
 }
 
 .other-posts {
@@ -65,4 +69,26 @@ h2 {
 .author-box {
     padding-top: 20px;
     border-top: 1px solid #868686;
+}
+
+.other {
+    margin-bottom: 40px;
+}
+
+.author-box img{ /* this 'img' makes that code below affects only images inside 'author-box' class */
+    height: 100px;
+    width: 100px;
+    border-radius: 50%; /* it makes author img circle shaped */
+    float: left;
+}
+
+.blog-post img{/* this 'img' makes that code below affects only images inside 'blog-post' class */
+    height: 150px;
+    width: auto;
+}
+
+.date{
+    position: absolute;
+    top: 10px;
+    right: 30px;
 }
